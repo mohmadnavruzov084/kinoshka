@@ -1,0 +1,45 @@
+.header {
+    padding-top: 20px;
+
+
+    &-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav {
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+
+
+        }
+
+        &-item {
+            a {
+                color: black;
+            }
+
+        }
+    }
+
+
+    &-hr {
+        width: 95%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 55px;
+        background: pink;
+        height: 1.5px;
+    }
+
+    &__logo {
+        a {
+            color: black;
+
+        }
+    }
+
+}
