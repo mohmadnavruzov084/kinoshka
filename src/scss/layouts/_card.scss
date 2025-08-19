@@ -24,7 +24,8 @@ $accent-color: rgb(211, 130, 144);
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: clamp(20px, 3vw, 30px);
-        justify-items: center;
+        place-items: center;
+        /* центрирует все дочерние элементы */
     }
 
     &__content {
@@ -109,9 +110,16 @@ $accent-color: rgb(211, 130, 144);
 }
 
 .svg_loaoder {
+    margin-top: 100px;
     width: 200px;
-    display: block;
-    margin: 0 auto;
-    padding-top: 180px;
+    grid-column: 1 / -1;
+    /* занимает все колонки */
+    display: flex;
+    justify-content: center;
     align-items: center;
+    min-height: 200px;
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+
 }
